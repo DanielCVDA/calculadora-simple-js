@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Calculator2</title>
+    <link rel="stylesheet" href="styles/calculadora.css">
+  </head>
+  <body>
+    <div class="calculator-div">
+      <p class="titulo">Calculadora Electrónica</p>
+      <div class="calculator-row">
+        <div class="js-calculation output" placeholder="0"></div>
+      </div>
+      <p class="calculator-row">
+        <button class="botonReset" onclick="updateCalculation('C');">
+          <img class="calculator-button" src="images/AC.png">
+        </button>
+        <button class="botonReset" onclick="updateCalculation('C');">
+          <img class="calculator-button" src="images/CE.png">
+        </button>
+        <button onclick="updateCalculation('%');">
+          <img class="calculator-button" src="images/Porc.png">
+        </button>
+        <button onclick="updateCalculation(' / ');">
+          <img class="calculator-button" src="images/Div.png">
+        </button>
+      </p>
+      <p class="calculator-row">
+        <button onclick="updateCalculation('7');">
+          <img class="calculator-button" src="images/7.png">
+        </button>
+        <button onclick="updateCalculation('8');">
+          <img class="calculator-button" src="images/8.png">
+        </button>
+        <button onclick="updateCalculation('9');">
+          <img class="calculator-button" src="images/9.png">
+        </button>
+        <button onclick="updateCalculation(' * ');">
+          <img class="calculator-button" src="images/mult.png">
+        </button>
+      </p>
+      <p class="calculator-row">
+        <button onclick="updateCalculation('4');">
+          <img class="calculator-button" src="images/4.png">
+        </button>
+        <button onclick="updateCalculation('5');">
+          <img class="calculator-button" src="images/5.png">
+        </button>
+        <button onclick="updateCalculation('6');">
+          <img class="calculator-button" src="images/6.png">
+        </button>
+        <button onclick="updateCalculation(' - ');">
+          <img class="calculator-button" src="images/minus.png">
+        </button>
+      </p>
+      <p class="calculator-row">
+        <button onclick="updateCalculation('1');">
+          <img class="calculator-button" src="images/1.png">
+        </button>
+        <button onclick="updateCalculation('2');">
+          <img class="calculator-button" src="images/2.png">
+        </button>
+        <button onclick="updateCalculation('3');">
+          <img class="calculator-button" src="images/3.png">
+        </button>
+        <button class="plus-button" onclick="updateCalculation(' + ');">
+          <img class="calculator-button" src="images/plus.png">
+        </button>
+      </p>
+      <p class="calculator-row last-row">
+        <button class="botonCero" onclick="updateCalculation('0')">
+          <img class="calculator-button" src="images/0.png">
+        </button>
+        <button onclick="updateCalculation('.');">
+          <img class="calculator-button" src="images/dot.png">
+        </button>
+        <button onclick="updateCalculation('=');">
+          <img class="calculator-button" src="images/equals.png">
+        </button>
+      </p>
+  </div>
+    <script src="scripts/calculadora.js"> </script>
+  </body>
+</html>
